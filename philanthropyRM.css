@@ -1,0 +1,123 @@
+body {
+    font-family: upheaval, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2rem;
+}
+
+.filter-container input {
+    font-family: upheaval, sans-serif;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: auto;
+}
+
+.philanthropy-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.philanthropy-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    margin-bottom: 40px;
+}
+
+.philanthropy-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.philanthropy-item h2 {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+}
+
+.philanthropy-item p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.fadeIn {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.fadeOut {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .philanthropy-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .filter-container input {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+
+.move-up {
+    object-position: center 35%;
+}
+
+.move-up2 {
+    object-position: center 47%;
+}
+
+.move-up3 {
+    object-position: center 70%;
+}
+
+.move-up4 {
+    object-position: center 15%;
+}

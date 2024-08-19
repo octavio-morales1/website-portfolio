@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Involvement - Octavio Morales</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="campusInvolvementRM.css" />
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo"><a href="index.html">Octavio Morales</a></div>
+        <div class="nav-links-container">
+            <ul class="nav-links row-1">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+            </ul>
+            <ul class="nav-links row-2">
+                <li><a href="index.html#involvement">Campus Involvement</a></li>
+                <li><a href="index.html#community">Philanthropy</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"><a href="index.html">Octavio Morales</a></div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="menu-links">
+            <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="index.html#involvement">Campus Involvement</a></li>
+            <li><a href="index.html#community">Community Service</a></li>
+            <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="involvement-section" class="animated">
+        <div class="text-container">
+            <p class="section__text__p1">My Campus Life</p>
+            <h1 class="title">Campus Involvement</h1>
+        </div>
+        <div class="filter-container">
+            <input type="text" id="search-bar" placeholder="Search..." oninput="filterInvolvements()">
+            <select id="filter-position" onchange="filterInvolvements()">
+                <option value="all">All Positions</option>
+                <option value="secretary">Secretary</option>
+                <option value="academic-chair">Academic Chair</option>
+                <option value="inclusion-representative">Inclusion Representative</option>
+                <option value="senator">Senator</option>
+                <option value="president">President</option>
+                <option value="vice-president-of-operations">Vice President of Operations</option>
+                <option value="vice-president">Vice President</option>
+            </select>
+        </div>
+        <div id="involvement-list">
+            <div class="involvement-item" data-position="secretary academic-chair inclusion-representative">
+                <img src="./assets/LUL.jpeg" alt="La Unidad Latina, Lambda Upsilon Lambda Fraternity, Incorporated" class="move-up">
+                <div class="involvement-details">
+                    <h2>La Unidad Latina, Lambda Upsilon Lambda Fraternity, Incorporated</h2>
+                    <p><strong>Position(s) Held:</strong> Secretary, Academic Chair, Inclusion Representative</p>
+                    <p class="ducklink"><strong>Ducklink:</strong> <a href="https://ducklink.stevens.edu/feeds?type=club&type_id=35474&tab=about" target="_blank">Click Here</a></p>
+                    <p class="ducklink"><strong>Chapter Website:</strong> <a href="https://www.lulatstevens.org/" target="_blank">Click Here</a></p>
+                </div>
+            </div>
+            <div class="involvement-item" data-position="senator">
+                <img src="./assets/SGA.png" alt="Student Government Association">
+                <div class="involvement-details">
+                    <h2>Student Government Association</h2>
+                    <p><strong>Position(s) Held:</strong> Senator</p>
+                    <p class="ducklink"><strong>Ducklink:</strong> <a href="https://ducklink.stevens.edu/feeds?type=club&type_id=35513&tab=about" target="_blank">Click Here</a></p>
+                </div>
+            </div>
+            <div class="involvement-item" data-position="president vice-president-of-operations">
+                <img src="./assets/LatinX.png" alt="LatinX Council">
+                <div class="involvement-details">
+                    <h2>LatinX Council</h2>
+                    <p><strong>Position(s) Held:</strong> President, Vice President of Operations</p>
+                    <p class="ducklink"><strong>Ducklink:</strong> Ducklink Not Yet Made</p>
+                </div>
+            </div>
+            <div class="involvement-item" data-position="vice-president">
+                <img src="./assets/bowling.jpeg" alt="Stevens Bowling Team" class="move-up2">
+                <div class="involvement-details">
+                    <h2>Stevens Bowling Team</h2>
+                    <p><strong>Position(s) Held:</strong> Vice President</p>
+                    <p class="ducklink"><strong>Ducklink:</strong> <a href="https://ducklink.stevens.edu/feeds?type=club&type_id=35668&tab=about" target="_blank">Click Here</a></p>
+                </div>
+            </div>
+            <div class="involvement-item">
+                <img src="./assets/orderofomega.jpg" alt="Order of Omega">
+                <div class="involvement-details">
+                    <h2>Order of Omega</h2>
+                    <p class="ducklink"><strong>Ducklink:</strong> <a href="https://ducklink.stevens.edu/feeds?type=club&type_id=35483&tab=about" target="_blank">Click Here</a></p>
+                </div>
+            </div>
+            <div class="involvement-item">
+                <img src="./assets/SHPE.png" alt="Society of Hispanic Professional Engineers">
+                <div class="involvement-details">
+                    <h2>Society of Hispanic Professional Engineers</h2>
+                    <p class="ducklink"><strong>Ducklink:</strong> <a href="https://ducklink.stevens.edu/feeds?type=club&type_id=35507&tab=about" target="_blank">Click Here</a></p>
+                </div>
+            </div>
+            <div class="involvement-item">
+                <img src="./assets/LAA.png" alt="Latin American Association">
+                <div class="involvement-details">
+                    <h2>Latin American Association</h2>
+                    <p class="ducklink"><strong>Ducklink:</strong> <a href="https://ducklink.stevens.edu/feeds?type=club&type_id=35541&tab=about" target="_blank">Click Here</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="nav-links-container">
+            <ul class="nav-links row-1">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+            </ul>
+            <ul class="nav-links row-2">
+                <li><a href="index.html#involvement">Campus Involvement</a></li>
+                <li><a href="index.html#community">Philanthropy</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="sideScript.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

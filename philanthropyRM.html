@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philanthropy - Octavio Morales</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="philanthropyRM.css" />
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo"><a href="index.html">Octavio Morales</a></div>
+        <div class="nav-links-container">
+            <ul class="nav-links row-1">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+            </ul>
+            <ul class="nav-links row-2">
+                <li><a href="index.html#involvement">Campus Involvement</a></li>
+                <li><a href="index.html#community">Philanthropy</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"><a href="index.html">Octavio Morales</a></div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="menu-links">
+            <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="index.html#involvement">Campus Involvement</a></li>
+            <li><a href="index.html#community">Philanthropy</a></li>
+            <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="philanthropy-section" class="animated">
+        <div class="text-container">
+            <p class="section__text__p1">My Philanthropy Work</p>
+            <h1 class="title">Philanthropy</h1>
+        </div>
+        <div class="filter-container">
+            <input type="text" id="search-bar" placeholder="Search..." oninput="filterPhilanthropy()">
+        </div>
+        <div id="philanthropy-list">
+            <div class="philanthropy-item">
+                <img src="./assets/shelter.jpg" alt="Hoboken Homeless Shelter" class="move-up4">
+                <div class="philanthropy-details">
+                    <h2>Hoboken Homeless Shelter</h2>
+                    <p>I volunteered with the Hermanos of the Alpha Alpha chapter of La Unidad Latina, Lambda Upsilon Lambda Fraternity Inc. at the Hoboken Homeless Shelter, where we assisted in preparing and serving dinner. We provided over 50 meals to those in need, making a significant impact on the community and demonstrating our commitment to supporting the less fortunate.</p>
+                </div>
+            </div>
+            <div class="philanthropy-item">
+                <img src="./assets/christmas.jpeg" alt="Brown and Gold Christmas" class="move-up">
+                <div class="philanthropy-details">
+                    <h2>Brown and Gold Christmas</h2>
+                    <p>I participated in a collaborative community event where numerous organizations came together to wrap presents for the Hoboken Housing Authority. I assisted in preparing over 330 gifts and contributed to raising more than $1,200 in funds. The gifts were organized for distribution at the HHA Holiday Celebration, highlighting our collective effort in giving back to the community.</p>
+                </div>
+            </div>
+            <div class="philanthropy-item">
+                <img src="./assets/beach.png" alt="SHPE Beach Sweeps" class="move-up2">
+                <div class="philanthropy-details">
+                    <h2>SHPE Beach Sweeps</h2>
+                    <p>As a member of SHPE, I participated in our annual Beach Sweep event organized in collaboration with Clean Ocean Action. I contributed to the event by assisting with logistics and volunteer coordination, helping ensure a successful cleanup of local beaches. My involvement also included promoting the event, highlighting its impact on environmental protection.</p>
+                </div>
+            </div>
+            <div class="philanthropy-item">
+                <img src="./assets/prevention.png" alt="Suicide Prevention Walk" class="move-up3">
+                <div class="philanthropy-details">
+                    <h2>Suicide Prevention Walk</h2>
+                    <p>I participated with the people of Hoboken in this year’s March Out of Darkness walk, which aims to promote suicide prevention and awareness. By taking part in the event, we supported efforts to address the alarming rate of suicide and raised awareness about mental health issues.</p>
+                </div>
+            </div>
+            <div class="philanthropy-item">
+                <p>*Photo Not Available*</p>
+                <div class="philanthropy-details">
+                    <h2>SGA Card Writing</h2>
+                    <p>I contributed to a project organized by the Student Government Association, where we created over 200 heartfelt cards for patients in hospitals. These cards were designed to offer encouragement and wish a speedy recovery to those in need. Our efforts aimed to brighten the spirits of individuals facing challenging times and show our support for their well-being.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="nav-links-container">
+            <ul class="nav-links row-1">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+            </ul>
+            <ul class="nav-links row-2">
+                <li><a href="index.html#involvement">Campus Involvement</a></li>
+                <li><a href="index.html#community">Philanthropy</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="sideScript.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

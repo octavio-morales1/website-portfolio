@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Octavio Morales</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="experienceRM.css" />
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo"><a href="index.html">Octavio Morales</a></div>
+        <div class="nav-links-container">
+            <ul class="nav-links row-1">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+            </ul>
+            <ul class="nav-links row-2">
+                <li><a href="index.html#involvement">Campus Involvement</a></li>
+                <li><a href="index.html#community">Philanthropy</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"><a href="index.html">Octavio Morales</a></div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <ul class="menu-links">
+            <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="index.html#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="index.html#involvement" onclick="toggleMenu()">Campus Involvement</a></li>
+            <li><a href="index.html#community" onclick="toggleMenu()">Community Service</a></li>
+            <li><a href="index.html#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="experience-section" class="animated">
+        <div class="text-container">
+            <p class="section__text__p1">More About My Experiences</p>
+            <h1 class="title">Professional and Project Experiences</h1>
+        </div>
+        <div class="filter-container">
+            <input type="text" id="search-bar" placeholder="Search..." oninput="filterExperiences()">
+            <select id="filter-category" onchange="filterExperiences()">
+                <option value="all">All Categories</option>
+                <option value="work">Work</option>
+                <option value="project">Project</option>
+            </select>
+            <select id="filter-branch" onchange="filterExperiences()">
+                <option value="all">All Branches</option>
+                <option value="web-development">Web Development</option>
+                <option value="machine-learning">Machine Learning</option>
+                <option value="concurrent-programming">Concurrent Programming</option>
+            </select>
+        </div>
+        <div id="experiences-list">
+            <div class="experience-item" data-category="project" data-branch="web-development">
+                <img src="./assets/portfolioEXP.png" alt="Portfolio Website Image">
+                <div class="experience-details">
+                    <h2>Online Portfolio (This Website)</h2>
+                    <p><strong>Experience Category:</strong> Project</p>
+                    <p><strong>Branches of Computer Science:</strong> Web Development</p>
+                    <p><strong>Github Link:</strong> <a href="https://github.com/octavio-morales1/website-portfolio" target="_blank">Click Here</a></p>
+                    <p>For my portfolio website, I created a comprehensive platform that goes beyond an expanded version of my resume, offering a detailed view of who I am beyond just academics. I developed the site using HTML, CSS, and JavaScript, focusing on clean design layouts. The website showcases my experience, academic achievements, campus involvement, and philanthropy, providing a well-rounded perspective on my personal and professional journey.</p>
+                </div>
+            </div>
+            <div class="experience-item" data-category="project" data-branch="machine-learning">
+                <img src="./assets/bankEXP.png" alt="Company Bankruptcy Prediction Image">
+                <div class="experience-details">
+                    <h2>Company Bankruptcy Prediction</h2>
+                    <p><strong>Experience Category:</strong> Project</p>
+                    <p><strong>Branches of Computer Science:</strong> Machine Learning</p>
+                    <p><strong>Github Link:</strong> <a href="https://github.com/octavio-morales1/ComputerScienceCollection/tree/main/CS559-%20Machine%20Learning/Projects" target="_blank">Click Here</a></p>
+                    <p>For this project, I worked on developing a machine learning model to predict whether a company will file for bankruptcy, a crucial binary classification task. The project involved extensive data preparation, including feature reduction and extraction, followed by the implementation of clustering techniques to group companies based on their characteristics. I also contributed to building and evaluating models using stacking methods and k-fold cross-validation to ensure the highest accuracy in predictions, ultimately enhancing the model's ability to handle imbalanced data and improve overall performance.</p>
+                </div>
+            </div>
+            <div class="experience-item" data-category="project" data-branch="web-development">
+                <img src="./assets/bookClubEXP.png" alt="Book Club Image">
+                <div class="experience-details">
+                    <h2>Book Club</h2>
+                    <p><strong>Experience Category:</strong> Project</p>
+                    <p><strong>Branches of Computer Science:</strong> Web Development</p>
+                    <p><strong>Github Link:</strong> <a href="https://github.com/octavio-morales1/BookClub" target="_blank">Click Here</a></p>
+                    <p>For this project, I developed a comprehensive book club platform that allows users to create profiles, join book clubs, and participate in discussions. I implemented key features such as secure authentication, event management, and a dynamic system for tracking reading progress. The platform is designed to enhance user interaction by offering personalized book recommendations, a review system, and timely notifications, ensuring an engaging and organized experience for all users.</p>
+                </div>
+            </div>
+            <div class="experience-item" data-category="project" data-branch="concurrent-programming">
+                <img src="./assets/chatEXP.png" alt="Real Time Chat Communication Image">
+                <div class="experience-details">
+                    <h2>Real Time Chat Communication</h2>
+                    <p><strong>Experience Category:</strong> Project</p>
+                    <p><strong>Branches of Computer Science:</strong> Concurrent Programming</p>
+                    <p><strong>Github Link:</strong> <a href="https://github.com/octavio-morales1/ComputerScienceCollection/tree/main/CS511-%20Concurrent%20Programming/Homework/HW4" target="_blank">Click Here</a></p>
+                    <p>For this project, I developed a simple chat application called TinyChat using Erlang, focusing on implementing core messaging protocols and process management. The application involves multiple actors such as clients, servers, and chat rooms, each with specific roles and states that I meticulously handled to ensure seamless communication and interaction. Through this project, I gained hands-on experience with Erlang's concurrency model and message-passing techniques, reinforcing my understanding of distributed systems and real-time application development.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="nav-links-container">
+            <ul class="nav-links row-1">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+            </ul>
+            <ul class="nav-links row-2">
+                <li><a href="index.html#involvement">Campus Involvement</a></li>
+                <li><a href="index.html#community">Philanthropy</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="sideScript.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
