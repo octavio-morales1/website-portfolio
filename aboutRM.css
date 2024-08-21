@@ -59,3 +59,9 @@
 .expected-graduation {
     margin-top: 1rem;
 }
+
+@media screen and (max-width: 1200px) {
+    .read-more-details-container{
+        transform: translateX(-40px);
+    }
+}
